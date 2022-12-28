@@ -12,11 +12,14 @@ The Neural Network takes 2 Inputs:
     
     #Training Log
     
- loss=1.0637370347976685 batch_id=468: 100%|██████████| 469/469 [00:28<00:00, 16.18it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 1.022, MNIST Accuracy:65.18, Addition_Accuracy:7.79
-loss=0.5416896343231201 batch_id=468: 100%|██████████| 469/469 [00:30<00:00, 15.45it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.672, MNIST Accuracy:75.89, Addition_Accuracy:7.82
-loss=0.4748753607273102 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 16.11it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.372, MNIST Accuracy:86.4, Addition_Accuracy:9.09
-loss=0.390163391828537 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 16.07it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.312, MNIST Accuracy:88.08, Addition_Accuracy:8.85
+ loss=0.32161745429039 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 15.93it/s]
+<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.321, MNIST Accuracy:86.83, Addition_Accuracy:9.0
+
+loss=0.3808058202266693 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 15.93it/s]
+<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.302, MNIST Accuracy:87.39, Addition_Accuracy:9.09
+
+loss=0.4174554646015167 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 15.96it/s]
+<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.296, MNIST Accuracy:87.62, Addition_Accuracy:8.7
+
+loss=0.20930629968643188 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 16.06it/s]
+<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.289, MNIST Accuracy:87.76, Addition_Accuracy:8.36
