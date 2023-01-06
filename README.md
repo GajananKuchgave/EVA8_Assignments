@@ -3,23 +3,38 @@ The repository contains all the assignments from EVA8 Course on the Artificial N
 EVA8_MNIST_PyTorch dataset
 
 The Neural Network takes 2 Inputs:
-  an image from the MNIST dataset (say 5), and
-  a random number between 0 and 9, (say 7)
+  1. an image from the MNIST dataset (say 5)
   
-  and gives two outputs:
-    the "number" that was represented by the MNIST image (predict 5), and
-    the "sum" of this number with the random number and the input image to the network (predict 5 + 7 = 12)
+  2. a random number between 0 and 9, (say 7)
+  
+  3. gives two outputs:
+ 
+    a) the "number" that was represented by the MNIST image (predict 5)
     
-    #Training Log
+    b) the "sum" of this number with the random number and the input image to the network (predict 5 + 7 = 12)
     
- loss=0.32161745429039 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 15.93it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.321, MNIST Accuracy:86.83, Addition_Accuracy:9.0
+# Data Representation
+  
+1. Mixed the both MNIST data and Hot encoder Random number at the fully connected layer
+2. used 19 parameters as a output for the prediction
 
-loss=0.3808058202266693 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 15.93it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.302, MNIST Accuracy:87.39, Addition_Accuracy:9.09
+# Training and Testing Log
+    
+ Training_loss=1.5795272588729858 batch_id=468: 100%|██████████| 469/469 
+ Average loss: 0.013,   MNIST Accuracy:72.69,   Addition_Accuracy:8.13
 
-loss=0.4174554646015167 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 15.96it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.296, MNIST Accuracy:87.62, Addition_Accuracy:8.7
 
-loss=0.20930629968643188 batch_id=468: 100%|██████████| 469/469 [00:29<00:00, 16.06it/s]
-<torch.utils.data.dataloader.DataLoader object at 0x7f69288a3e20> set: Average loss: 0.289, MNIST Accuracy:87.76, Addition_Accuracy:8.36
+Training_loss=1.2168940305709839 batch_id=468: 100%|██████████| 469/469 
+Average loss: 0.010,   MNIST Accuracy:96.55,   Addition_Accuracy:9.76
+
+
+Training_loss=1.1245989799499512 batch_id=468: 100%|██████████| 469/469 
+Average loss: 0.009,   MNIST Accuracy:97.48,   Addition_Accuracy:10.09
+
+
+Training_loss=1.0494039058685303 batch_id=468: 100%|██████████| 469/469 
+Average loss: 0.008,   MNIST Accuracy:98.25,   Addition_Accuracy:10.17
+
+
+Training_loss=0.9079716205596924 batch_id=468: 100%|██████████| 469/469 
+Average loss: 0.007,   MNIST Accuracy:98.54,   Addition_Accuracy:10.28
