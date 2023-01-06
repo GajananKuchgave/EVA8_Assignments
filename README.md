@@ -20,21 +20,21 @@ The Neural Network takes 2 Inputs:
 
 # Training and Testing Log
     
- Training_loss=1.5795272588729858 batch_id=468: 100%|██████████| 469/469 
- Average loss: 0.013,   MNIST Accuracy:72.69,   Addition_Accuracy:8.13
+ Training_loss=1.448 batch_id=468: 100%|██████████| 469/469 [00:25<00:00, 18.53it/s]
+ 
+ set: Average loss: 0.012,   MNIST Accuracy:91.220,     Addition_Accuracy:9.920
 
 
-Training_loss=1.2168940305709839 batch_id=468: 100%|██████████| 469/469 
-Average loss: 0.010,   MNIST Accuracy:96.55,   Addition_Accuracy:9.76
+Training_loss=1.245 batch_id=468: 100%|██████████| 469/469 [00:25<00:00, 18.28it/s]
+
+ set: Average loss: 0.010,   MNIST Accuracy:96.360,   Addition_Accuracy:10.010
 
 
-Training_loss=1.1245989799499512 batch_id=468: 100%|██████████| 469/469 
-Average loss: 0.009,   MNIST Accuracy:97.48,   Addition_Accuracy:10.09
+Training_loss=1.138 batch_id=468: 100%|██████████| 469/469 [00:25<00:00, 18.42it/s]
+
+ set: Average loss: 0.009,   MNIST Accuracy:97.780,   Addition_Accuracy:9.620
 
 
-Training_loss=1.0494039058685303 batch_id=468: 100%|██████████| 469/469 
-Average loss: 0.008,   MNIST Accuracy:98.25,   Addition_Accuracy:10.17
+Training_loss=1.038 batch_id=468: 100%|██████████| 469/469 [00:25<00:00, 18.56it/s]
 
-
-Training_loss=0.9079716205596924 batch_id=468: 100%|██████████| 469/469 
-Average loss: 0.007,   MNIST Accuracy:98.54,   Addition_Accuracy:10.28
+ set: Average loss: 0.008,   MNIST Accuracy:98.490,   Addition_Accuracy:9.710
