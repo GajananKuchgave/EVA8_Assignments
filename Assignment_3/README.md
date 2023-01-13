@@ -5,6 +5,45 @@
   
   The model has been trained using BN, Dropout, a Fully connected layer, and GAP. 
   
+  # Neural Network
+  
+    conv1 = Sequential(                     #input-28x28x1    #RF -3x3  #Output 26x26x16
+            Conv2d(1, 16, 3, bias=False),
+            ReLU(),          
+            BatchNorm2d(16),  
+            Dropout2d(0.25),
+            Conv2d(16, 16, 3, bias=False),           #input-26x26x16   #RF -5x5  #Output 24x24x16      
+            ReLU(), 
+            BatchNorm2d(16),          
+            Conv2d(16, 16, 3, bias=False),           #input-24x24x16   #RF -7x7  #Output 22x22x16
+            ReLU(),         
+            BatchNorm2d(16), 
+            MaxPool2d(2, 2)                          #input-22x22x16   #RF -7x7  #Output 11x11x16
+        )    
+
+     conv2 = Sequential(                     #input-11x11x16   #RF -16x16  #Output 9x9x16
+            Conv2d(16, 16, 3, bias=False),          
+            ReLU(),          
+            BatchNorm2d(16),   
+            Dropout2d(0.25), 
+            Conv2d(16, 16, 3, padding=1, bias=False),  #input-9x9x16   #RF -18x18  #Output 9x9x16   
+            ReLU(),
+            BatchNorm2d(16),
+            Dropout2d(0.1),
+            Conv2d(16, 16, 3,bias=False),             #input-9x9x16   #RF -20x20  #Output 7x7x16
+            ReLU(),
+            BatchNorm2d(16),
+            Dropout2d(0.1),
+            Conv2d(16,32, 3, bias=False),             #input-7x7x16   #RF -22x22  #Output 5x5x32
+            ReLU(),
+            BatchNorm2d(32),
+            Dropout2d(0.25),        
+        )
+
+   conv_final = Conv2d(32, 10, 1, bias=False) #input-5x5x32 Output: 1x1x32 
+   avgP = AvgPool2d(5)            
+  
+  
   # Below is the Training Log
   
   epoch  17
