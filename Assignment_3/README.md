@@ -1,11 +1,11 @@
 
- #Training MNIST Dataset with Neural Network with less than 20k parameters and achieve greater than or equal to 99.40% accuracy
+ # Training MNIST Dataset with Neural Network with less than 20k parameters and achieve greater than or equal to 99.40% accuracy
   
   The model has been trained with 16848 parameters.
   
   The model has been trained using BN, Dropout, a Fully connected layer, and GAP. 
   
-  #Below is the Training Log
+  # Below is the Training Log
   
   epoch  17
 loss=0.05122385546565056 batch_id=468: 100%|██████████| 469/469 [00:15<00:00, 30.62it/s]
