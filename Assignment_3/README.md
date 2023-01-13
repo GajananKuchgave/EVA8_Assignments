@@ -40,8 +40,8 @@
             Dropout2d(0.25),        
         )
 
-   conv_final = Conv2d(32, 10, 1, bias=False) #input-5x5x32 Output: 1x1x32 
-   avgP = AvgPool2d(5)            
+     conv_final = Conv2d(32, 10, 1, bias=False) #input-5x5x32 Output: 1x1x32 
+     avgP = AvgPool2d(5)            
   
   
   # Below is the Training Log
