@@ -1,4 +1,4 @@
-# BackPropogation understanding using Excell
+# BackPropogation understanding using Excel
 The Assignment is all about the understanding the BackPropoation by doing the calculations which help to adjust the weights and reduce the error.
 Below image shown has 2 inputs, 2 hidden neurons and two output neurons used.
 # Neural Network
@@ -82,8 +82,9 @@ Calculate the partial derivative of E_Total w.r.t w5,w6,w7 and w8 as given below
       
   # Error Graph w.r.t Different Learning rates
   
-    We have used learning rates 0.1,0.2, 0.3, 0.5, 1.0 and 2.0. The graph shows that the more the learning rate, faster the error reduction.
-    But optimal Learning rate need to be used to balance the accuracy and avoid the under fitting or over fitting effect
+ We have used learning rates 0.1,0.2, 0.3, 0.5, 1.0 and 2.0. The graph shows that the more the learning rate, faster the error reduction.
+ 
+ But optimal Learning rate need to be used to balance the accuracy and avoid the under fitting or over fitting effect
     
 ![Graph](https://user-images.githubusercontent.com/46486710/213683963-a6d2a978-6546-4da2-a2e6-81758b016a28.png)
 
