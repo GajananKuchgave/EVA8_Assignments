@@ -7,7 +7,7 @@ def NormalizationFunction(method, out_channels):
   if(method == 'BN'):
     return nn.BatchNorm2d(out_channels)
   elif(method == 'LN'):
-    return nn.LayerNorm(1, out_channels)
+    return nn.GroupNorm(1, out_channels)
   elif(method == 'GN'):
     return nn.GroupNorm(num_groups, out_channels)
 
