@@ -58,9 +58,9 @@ class Net(nn.Module):
             nn.ReLU(),            
             NormalizationFunction(normalizationMethod, 32),
             nn.Dropout(dropout_value),# output_size = 12 RF = 22
-            nn.Conv2d(in_channels=32, out_channels=64, kernel_size=(3, 3),padding=0, bias=False),
+            nn.Conv2d(in_channels=32, out_channels=10, kernel_size=(3, 3),padding=0, bias=False),
             nn.ReLU(),            
-            NormalizationFunction(normalizationMethod, 64),
+            NormalizationFunction(normalizationMethod, 10),
             nn.Dropout(dropout_value)
         ) # output_size = 4 RF = 46
         #self.convblock5 = nn.Sequential(
@@ -87,11 +87,11 @@ class Net(nn.Module):
             nn.AvgPool2d(kernel_size=4)
         ) # output_size = 1
 
-        self.convblock8 = nn.Sequential(
-            nn.Conv2d(in_channels=64, out_channels=10, kernel_size=(1, 1), padding=0, bias=False)
-        ) 
+        #self.convblock8 = nn.Sequential(
+        #    nn.Conv2d(in_channels=64, out_channels=10, kernel_size=(1, 1), padding=0, bias=False)
+        #) 
 
-        self.dropout = nn.Dropout(dropout_value)
+        #self.dropout = nn.Dropout(dropout_value)
 
     def forward(self, x):
         x = self.convblock1(x)
@@ -104,7 +104,7 @@ class Net(nn.Module):
         #x = self.fc2(F.relu(self.fc1(x))) 
         #x = self.fc1(x)
         x = self.gap(x)        
-        x = self.convblock8(x)
+        #x = self.convblock8(x)
         #x = self.fc2(F.relu(self.fc1(x))) 
 
         x = x.view(-1, 10)
