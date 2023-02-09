@@ -23,7 +23,7 @@ class Net(nn.Module):
             nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=0, bias=False),
             nn.ReLU(),
             NormalizationFunction(normalizationMethod, 32),
-            nn.Dropout(dropout_value)# output_size = 30 RF = 5
+            nn.Dropout(dropout_value),# output_size = 30 RF = 5
             nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), padding=0, bias=False),
             nn.ReLU(),
             NormalizationFunction(normalizationMethod, 32),
@@ -57,7 +57,6 @@ class Net(nn.Module):
             nn.Conv2d(in_channels=32, out_channels=32, kernel_size=(3, 3), stride = 2,padding=0, bias=False),
             nn.ReLU(),            
             NormalizationFunction(normalizationMethod, 32),
-            nn.Dropout(dropout_value)
             nn.Dropout(dropout_value),# output_size = 12 RF = 22
             nn.Conv2d(in_channels=32, out_channels=64, kernel_size=(3, 3),padding=0, bias=False),
             nn.ReLU(),            
@@ -89,7 +88,7 @@ class Net(nn.Module):
         ) # output_size = 1
 
         self.convblock8 = nn.Sequential(
-            nn.Conv2d(in_channels=64, out_channels=10, kernel_size=(1, 1), padding=0, bias=False),
+            nn.Conv2d(in_channels=64, out_channels=10, kernel_size=(1, 1), padding=0, bias=False)
         ) 
 
         self.dropout = nn.Dropout(dropout_value)
