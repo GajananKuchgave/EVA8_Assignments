@@ -16,7 +16,7 @@ class Net(nn.Module):
         super(Net, self).__init__()
         # Input Block
         self.convblock1 = nn.Sequential(
-            nn.Conv2d(in_channels=1, out_channels=32, kernel_size=(3, 3), padding=1, bias=False),
+            nn.Conv2d(in_channels=3, out_channels=32, kernel_size=(3, 3), padding=1, bias=False),
             nn.ReLU(),
             NormalizationFunction(normalizationMethod, 32),
             nn.Dropout(dropout_value),# output_size = 32  RF = 3
